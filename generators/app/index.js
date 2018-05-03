@@ -15,14 +15,11 @@ module.exports = class extends Generator {
 			return true;
 		}
 
-		const prompt = [
-			{
-				type: "confirm",
-				name: "createDirectory",
-				message:
-					"Would you like to create a new directory for your project?"
-			}
-		];
+		const prompt = [{
+			type: "confirm",
+			name: "createDirectory",
+			message: "Would you like to create a new directory for your project?"
+		}];
 
 		return this.prompt(prompt).then(response => {
 			this.options.createDirectory = response.createDirectory;
@@ -34,13 +31,11 @@ module.exports = class extends Generator {
 			return true;
 		}
 
-		const prompt = [
-			{
-				type: "input",
-				name: "dirname",
-				message: "Enter directory name"
-			}
-		];
+		const prompt = [{
+			type: "input",
+			name: "dirname",
+			message: "Enter directory name"
+		}];
 
 		return this.prompt(prompt).then(response => {
 			this.options.dirname = response.dirname;
@@ -57,12 +52,12 @@ module.exports = class extends Generator {
 		this.fs.copy(this.templatePath(), this.destinationPath());
 
 		this.fs.copy(
-			this.templatePath(".editorconfig"),
+			this.templatePath(".editorconfig.txt"),
 			this.destinationPath(".editorconfig")
 		);
 
 		this.fs.copy(
-			this.templatePath(".gitignore"),
+			this.templatePath(".gitignore.txt"),
 			this.destinationPath(".gitignore")
 		);
 	}
