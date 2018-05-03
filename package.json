@@ -1,0 +1,29 @@
+{
+  "name": "generator-express-kit",
+  "version": "0.0.0",
+  "description": "Starter Kit for Node/Express+Webpack+Babel/ES6+",
+  "homepage": "https://github.com/kyicy/generator-express-kit",
+  "author": {
+    "name": "kyicy",
+    "email": "zhongtao_liu@outlook.com"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "express",
+    "webpack",
+    "yeoman-generator"
+  ],
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.1",
+    "chalk": "^2.1.0",
+    "yosay": "^2.0.1"
+  },
+  "repository": "kyicy/generator-express-kit",
+  "license": "MIT"
+}
