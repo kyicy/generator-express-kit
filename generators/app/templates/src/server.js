@@ -5,7 +5,9 @@ const app = express();
 setupMiddleware(app);
 
 app.all("*", (req, res) => {
-	res.json({ ok: "hello" });
+	res.json({
+		ok: "hello!"
+	});
 });
 
 export default app;
