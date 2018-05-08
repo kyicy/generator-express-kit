@@ -6,7 +6,7 @@ setupMiddleware(app);
 
 app.all("*", (req, res) => {
 	res.json({
-		ok: "hello!"
+		greetings: "hello!"
 	});
 });
 

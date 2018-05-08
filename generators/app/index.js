@@ -52,12 +52,12 @@ module.exports = class extends Generator {
 		this.fs.copy(this.templatePath(), this.destinationPath());
 
 		this.fs.copy(
-			this.templatePath(".editorconfig.txt"),
+			this.templatePath("editorconfig.txt"),
 			this.destinationPath(".editorconfig")
 		);
 
 		this.fs.copy(
-			this.templatePath(".gitignore.txt"),
+			this.templatePath("gitignore.txt"),
 			this.destinationPath(".gitignore")
 		);
 	}
