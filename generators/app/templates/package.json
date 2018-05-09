@@ -2,15 +2,17 @@
 	"name": "app",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "dist/server.js",
 	"scripts": {
 		"dev": "webpack --config webpack.dev.js --colors --progress",
 		"build": "webpack --config webpack.prod.js",
-		"start": "npm run build && node dist/server.js",
-		"test": "mocha-webpack --webpack-config webpack.test.js \"test/**/*.spec.js\" --timeout 10000 --require source-map-support/register"
+		"start": "node dist/server.js",
+		"test": "mocha-webpack --webpack-config webpack.test.js \"test/**/*.spec.js\" --timeout 10000 --require source-map-support/register",
+		"test:watch": "mocha-webpack --webpack-config webpack.test.js \"test/**/*.spec.js\" --timeout 10000 --require source-map-support/register --watch",
+		"docker:build": "npm run build && docker build -t ."
 	},
 	"author": "",
-	"license": "ISC",
+	"license": "",
 	"devDependencies": {
 		"babel-core": "^6.26.3",
 		"babel-loader": "^7.1.4",
