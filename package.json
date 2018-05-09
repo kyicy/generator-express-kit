@@ -1,6 +1,6 @@
 {
 	"name": "generator-express-kit",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Starter Kit for Node/Express+Webpack+Babel/ES6+",
 	"homepage": "https://github.com/kyicy/generator-express-kit",
 	"author": {

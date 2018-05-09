@@ -9,7 +9,7 @@
 		"start": "node dist/server.js",
 		"test": "mocha-webpack --webpack-config webpack.test.js \"test/**/*.spec.js\" --timeout 10000 --require source-map-support/register",
 		"test:watch": "mocha-webpack --webpack-config webpack.test.js \"test/**/*.spec.js\" --timeout 10000 --require source-map-support/register --watch",
-		"docker:build": "npm run build && docker build -t ."
+		"docker:build": "npm run build && docker build ."
 	},
 	"author": "",
 	"license": "",
