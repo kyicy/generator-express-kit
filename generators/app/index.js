@@ -53,7 +53,6 @@ module.exports = class extends Generator {
 
 		this.fs.delete(this.destinationPath('editorconfig.txt'));
 		this.fs.delete(this.destinationPath('gitignore.txt'));
-		this.fs.delete(this.destinationPath('dockerignore.txt'));
 
 		this.fs.copy(
 			this.templatePath("editorconfig.txt"),
@@ -63,11 +62,6 @@ module.exports = class extends Generator {
 		this.fs.copy(
 			this.templatePath("gitignore.txt"),
 			this.destinationPath(".gitignore")
-		);
-
-		this.fs.copy(
-			this.templatePath("dockerignore.txt"),
-			this.destinationPath(".dockerignore")
 		);
 
 	}
